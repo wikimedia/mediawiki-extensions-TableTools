@@ -1,0 +1,18 @@
+{
+	"root": true,
+	"extends": [
+		"wikimedia/client-es6",
+		"wikimedia/jquery",
+		"wikimedia/mediawiki"
+	],
+	"rules": {
+		"no-implicit-globals": "off"
+	},
+	"globals": {
+		"mediaWiki": "readonly",
+		"jQuery": "readonly",
+		"tableIndex": "writable",
+		"rowIndex": "readonly",
+		"cellIndex": "writable"
+	}
+}
