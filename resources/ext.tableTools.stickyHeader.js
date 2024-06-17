@@ -55,3 +55,35 @@ mw.hook( 'wikipage.content' ).add( function ( $content ) {
 		}
 	} );
 } );
+
+$( function () {
+	// Position sticky header in BlueSpiceDiscovery skin
+	var $sticky = $( 'body.skin-bluespicediscovery .mw-sticky-header > thead, body.skin-bluespicediscovery .jquery-tablesorter > thead' );
+	if ( $sticky.length === 0 ) {
+		return;
+	}
+
+	function updateStickyPosition() {
+		var $components = $( 'body.title-fixed #title-line, #nb-pri' );
+		var offset = 0;
+		$components.each( function() {
+			var $this = $( this ),
+				height = $this.outerHeight();
+			offset += height;
+		} );
+		$sticky.each( function() {
+			$( this ).css( 'top', offset );
+		} );
+	}
+	updateStickyPosition();
+
+	// Watch body for mutations. We are looking for sticky title line change
+	var observer = new MutationObserver( function( mutations ) {
+		mutations.forEach( function( mutation ) {
+			if ( mutation.type === 'attributes' && mutation.attributeName === 'class' ) {
+				updateStickyPosition();
+			}
+		} );
+	} );
+	observer.observe( document.body, { attributes: true } );
+} );
