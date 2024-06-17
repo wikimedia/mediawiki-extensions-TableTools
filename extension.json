@@ -62,17 +62,6 @@
 				"ext.tableTools.stickyHeader.css"
 			]
 		},
-		"ext.tabletools.visualEditor": {
-			"styles": [
-				"ext.tableTools.autoNumberColumn.css"
-			],
-			"scripts": [
-				"ext.tableTools.visualEditor.init.js"
-			],
-			"dependencies": [
-				"ext.visualEditor.core"
-			]
-		},
 		"ext.tabletools.visualEditor.tableStyles": {
 			"scripts": [
 				"ext.tableTools.visualEditor.tableStyles.js"
@@ -87,8 +76,7 @@
 			],
 			"dependencies": [
 				"mediawiki.api",
-				"vue",
-				"ext.vuejsplus-data-tree.vue"
+				"vue"
 			]
 		}
 	},
