@@ -13,6 +13,9 @@
 		"jQuery": "readonly",
 		"tableIndex": "writable",
 		"rowIndex": "readonly",
-		"cellIndex": "writable"
+		"cellIndex": "writable",
+		"ext": "readonly",
+		"bs": "readonly",
+		"ve": "readonly"
 	}
 }
