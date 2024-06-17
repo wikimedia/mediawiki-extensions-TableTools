@@ -11,7 +11,20 @@
 	"requires": {
 		"MediaWiki": ">= 1.39.0",
 		"extensions": {
+			"VisualEditor": "*",
 			"VueJsPlus": "~1.0.0"
+		}
+	},
+	"attributes": {
+		"VisualEditor": {
+			"PluginModules": [
+				"ext.tabletools.visualEditor"
+			]
+		},
+		"BlueSpiceVisualEditorConnector": {
+			"PluginModules": [
+				"ext.tabletools.visualEditor.tableStyles"
+			]
 		}
 	},
 	"AutoloadNamespaces": {
@@ -48,13 +61,33 @@
 				"ext.tableTools.stickyHeader.css"
 			]
 		},
+		"ext.tabletools.visualEditor": {
+			"styles": [
+				"ext.tableTools.autoNumberColumn.css"
+			],
+			"scripts": [
+				"ext.tableTools.visualEditor.init.js"
+			],
+			"dependencies": [
+				"ext.visualEditor.core"
+			]
+		},
+		"ext.tabletools.visualEditor.tableStyles": {
+			"scripts": [
+				"ext.tableTools.visualEditor.tableStyles.js"
+			],
+			"messages": [
+				"tabletools-ve-plugin-table-style-sticky"
+			]
+		},
 		"ext.tabletools.dataTable": {
 			"scripts": [
 				"ext.tableTools.dataTable.js"
 			],
 			"dependencies": [
 				"mediawiki.api",
-				"vue"
+				"vue",
+				"ext.vuejsplus-data-tree.vue"
 			]
 		}
 	},
