@@ -47,11 +47,11 @@ function emulateTHeadAndFoot( $table ) {
 
 mw.hook( 'wikipage.content' ).add( function ( $content ) {
 	// Do this for wikitable, but sortable does it on it's own already
-	$content.find( '.wikitable:not(.sortable) ' ).each( function ( i, table ) {
+	$content.find( '.mw-sticky-header:not(.sortable) ' ).each( function ( i, table ) {
 		if ( table.tBodies && !table.tHead ) {
 			// No thead found. Look for rows with <th>s and
 			// move them into a <thead> tag or a <tfoot> tag
-			emulateTHeadAndFoot( $( table ).addClass( 'mw-sticky-header' ) );
+			emulateTHeadAndFoot( $( table ) );
 		}
 	} );
 } );
