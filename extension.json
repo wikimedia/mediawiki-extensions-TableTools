@@ -13,7 +13,7 @@
 		"MediaWiki": ">= 1.39.0",
 		"extensions": {
 			"VisualEditor": "*",
-			"VueJsPlus": "~1.0.0"
+			"VueJsPlus": "*"
 		}
 	},
 	"attributes": {
