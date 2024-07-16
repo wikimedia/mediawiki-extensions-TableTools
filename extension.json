@@ -75,8 +75,7 @@
 				"ext.tableTools.dataTable.js"
 			],
 			"dependencies": [
-				"mediawiki.api",
-				"vue"
+				"mediawiki.api"
 			]
 		}
 	},
