@@ -71,11 +71,13 @@
 			]
 		},
 		"ext.tabletools.dataTable": {
+			"es6": true,
 			"scripts": [
 				"ext.tableTools.dataTable.js"
 			],
 			"dependencies": [
-				"mediawiki.api"
+				"mediawiki.api",
+				"ext.vuejsplus-data-grid.vue"
 			]
 		}
 	},
