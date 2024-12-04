@@ -71,13 +71,17 @@
 			]
 		},
 		"ext.tabletools.dataTable": {
-			"es6": true,
-			"scripts": [
-				"ext.tableTools.dataTable.js"
+			"class": "MediaWiki\\Extension\\VueJsPlus\\Module\\VueJsPlusModule",
+			"vueJsPlusComponents": [
+				"Grid"
+			],
+			"packageFiles": [
+				"ext.tableTools.dataTable.js",
+				"components/DataTable.vue"
 			],
 			"dependencies": [
-				"mediawiki.api",
-				"ext.vuejsplus-data-grid.vue"
+				"vue",
+				"mediawiki.api"
 			]
 		}
 	},
