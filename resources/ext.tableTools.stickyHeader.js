@@ -58,7 +58,7 @@ mw.hook( 'wikipage.content' ).add( function ( $content ) {
 
 $( function () {
 	// Position sticky header in BlueSpiceDiscovery skin
-	var $sticky = $( 'body.skin-bluespicediscovery .mw-sticky-header > thead, body.skin-bluespicediscovery .jquery-tablesorter > thead' );
+	var $sticky = $( 'body.skin-bluespicediscovery .mw-sticky-header, body.skin-bluespicediscovery .jquery-tablesorter' );
 	if ( $sticky.length === 0 ) {
 		return;
 	}
@@ -72,7 +72,11 @@ $( function () {
 			offset += height;
 		} );
 		$sticky.each( function() {
-			$( this ).css( 'top', offset );
+			const $thead = $( this ).find( 'thead' );
+			if ( !$thead.length ) {
+				return;
+			}
+			$thead.css( 'top', offset );
 		} );
 	}
 	updateStickyPosition();
