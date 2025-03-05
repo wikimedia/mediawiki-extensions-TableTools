@@ -58,7 +58,13 @@ mw.hook( 'wikipage.content' ).add( function ( $content ) {
 
 $( function () {
 	// Position sticky header in BlueSpiceDiscovery skin and derived from bluespicediscovery
-	var $sticky = $( 'body.base-bluespicediscovery .mw-sticky-header, body.base-bluespicediscovery .jquery-tablesorter' );
+	query = [
+		'body.skin-bluespicediscovery .mw-sticky-header',
+		'body.skin-bluespicediscovery .jquery-tablesorter',
+		'body.base-bluespicediscovery .mw-sticky-header',
+		'body.base-bluespicediscovery .jquery-tablesorter'
+	];
+	var $sticky = $( query.join( ',' ) );
 	if ( $sticky.length === 0 ) {
 		return;
 	}
