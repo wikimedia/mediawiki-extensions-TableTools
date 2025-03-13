@@ -5,9 +5,6 @@
 		"wikimedia/jquery",
 		"wikimedia/mediawiki"
 	],
-	"rules": {
-		"no-implicit-globals": "off"
-	},
 	"globals": {
 		"mediaWiki": "readonly",
 		"jQuery": "readonly",
@@ -17,5 +14,6 @@
 		"ext": "readonly",
 		"bs": "readonly",
 		"ve": "readonly"
-	}
+	},
+	"rules": {}
 }
