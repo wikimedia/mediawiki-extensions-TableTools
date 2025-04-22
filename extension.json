@@ -29,7 +29,9 @@
 		}
 	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Extension\\TableTools\\": "src/",
+		"MediaWiki\\Extension\\TableTools\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
 		"MediaWiki\\Extension\\TableTools\\Tests\\": "tests/phpunit/"
 	},
 	"MessagesDirs": {
