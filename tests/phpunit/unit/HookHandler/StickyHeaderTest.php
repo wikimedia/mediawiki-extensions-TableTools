@@ -3,7 +3,7 @@
 namespace MediaWiki\Extension\TableTools\Tests\HookHandler;
 
 use MediaWiki\Extension\TableTools\HookHandler\StickyHeader;
-use OutputPage;
+use MediaWiki\Output\OutputPage;
 
 /**
  * @coversDefaultClass \MediaWiki\Extension\TableTools\HookHandler\StickyHeader
