@@ -17,11 +17,6 @@
 		}
 	},
 	"attributes": {
-		"VisualEditor": {
-			"PluginModules": [
-				"ext.tabletools.visualEditor"
-			]
-		},
 		"BlueSpiceVisualEditorConnector": {
 			"PluginModules": [
 				"ext.tabletools.visualEditor.tableStyles"
