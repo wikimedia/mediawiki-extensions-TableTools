@@ -1,6 +1,7 @@
 [
 	{
 		"resourceModule": "ext.tabletools.dataTable",
+		"ignoreDependencies": true,
 		"maxSize": "2 kB"
 	}
 ]
