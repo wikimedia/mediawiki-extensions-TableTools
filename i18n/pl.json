@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Woytecr"
+		]
+	},
+	"tabletools-desc": "Dodaje dodatkową funkcjonalność dla tabel",
+	"tabletools-ve-plugin-table-style-sticky": "Nagłówek przyklejony"
+}
