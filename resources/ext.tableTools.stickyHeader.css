@@ -4,8 +4,8 @@
 /* But borders are broken: https://bugs.webkit.org/show_bug.cgi?id=128486 */
 .jquery-tablesorter > thead,
 .mw-sticky-header > thead {
-	position: -webkit-sticky;
-	position: sticky;
+	position: -webkit-sticky; /* stylelint-disable-line plugin/no-unsupported-browser-features */
+	position: sticky; /* stylelint-disable-line plugin/no-unsupported-browser-features */
 	top: 0;
 }
 
@@ -33,8 +33,8 @@
 
 .jquery-tablesorter > tfoot,
 .mw-sticky-header > tfoot {
-	position: -webkit-sticky;
-	position: sticky;
+	position: -webkit-sticky; /* stylelint-disable-line plugin/no-unsupported-browser-features */
+	position: sticky; /* stylelint-disable-line plugin/no-unsupported-browser-features */
 	bottom: 0;
 }
 /* On mobile, where we have tables in overflowable boxes to avoid viewport overflows,
