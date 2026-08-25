@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"tabletools-desc": "Pridáva ďalšie funkcie pre tabuľky obsahu",
+	"tabletools-ve-plugin-table-style-sticky": "Pripnutá hlavička"
+}
